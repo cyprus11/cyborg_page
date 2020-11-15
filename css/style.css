@@ -67,8 +67,8 @@ html, body {
 }
 
 .header {
-  background-image: url("../images/header.jpg");
-  background-size: cover;
+  background: transparent;
+  color: rgba(67,69,59,0.82);
 }
 
 .nav-menu {
@@ -115,8 +115,7 @@ html, body {
 .reviews {
   display: flex;
   flex-direction: column;
-  background-image: url("../images/content.jpeg");
-  background-size: cover;
+  background: transparent;
   height: 100%;
 }
 
