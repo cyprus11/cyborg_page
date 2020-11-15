@@ -1,0 +1,34 @@
+@media (max-width: 860px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .column-1-4, .column-3-4 {
+    width: 100%;
+  }
+
+  .nav-menu {
+    width: auto;
+    height: auto;
+  }
+
+  .menu {
+    flex-direction: column;
+    height: auto;
+  }
+  .menu-el {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .menu-el > a {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 470px) {
+  .div-image {
+    display: none;
+  }
+}

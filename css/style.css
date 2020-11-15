@@ -1,7 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  /*border: 1px solid black;*/
+  word-break: break-word;
+  font-family: 'Roboto', sans-serif;
 }
 
 html, body {
@@ -18,13 +19,18 @@ html, body {
   background-size: cover;
 }
 
+.center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .column {
   display: flex;
   height: 100%;
-}
-
-.column-3-4 {
-  width: 75%;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
 }
 
 .content {
@@ -32,11 +38,17 @@ html, body {
   flex-direction: column;
   flex: 1;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .column-1-4 {
   width: 25%;
+  height: auto;
+}
+
+.column-3-4 {
+  width: 75%;
+  min-height: auto;
 }
 
 .row {
@@ -48,6 +60,15 @@ html, body {
 
 .header, .footer {
   height: 250px;
+  background-color: rgba(67,69,59,0.82);
+  justify-content: center;
+  align-items: center;
+  color: rgba(255,249,255,0.82);
+}
+
+.header {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
 }
 
 .nav-menu {
@@ -78,8 +99,13 @@ html, body {
   width: 100%;
   height: 100%;
   text-align: center;
+  font-size: 1.5em;
   text-decoration: none;
-  padding-top: 15%;
+  padding-top: 13%;
+}
+
+.menu-el > a:hover {
+  color: black;
 }
 
 .menu-el:hover {
@@ -89,6 +115,9 @@ html, body {
 .reviews {
   display: flex;
   flex-direction: column;
+  background-image: url("../images/content.jpeg");
+  background-size: cover;
+  height: 100%;
 }
 
 .review {
@@ -116,6 +145,81 @@ html, body {
 
 .div-license, .div-order {
   margin: 20px;
-  height: 400px;
+  height: auto;
+  background-color: rgba(113,115,105,0.82);
+  padding: 10px;
 }
 
+.div-order > div > div {
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: rgba(255,249,255,0.82);
+}
+
+.phone-number {
+  height: 1.5em;
+}
+
+.call-btn {
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background: rgb(212,75,56);
+  padding: .7em 1.5em;
+  outline: none;
+}
+
+.call-btn:hover {
+  background: rgb(232,95,76);
+}
+
+.call-btn:active {
+  background: rgb(152,15,0);
+}
+
+.doc-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.doc-links > ul{
+  list-style: none;
+  font-size: larger;
+}
+
+.doc-links > ul > li {
+  margin: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+.link {
+  color: rgba(255,249,255,0.82);
+  text-decoration: none;
+  margin: 10px;
+}
+
+.link:hover {
+  color: black;
+}
+
+.contacts, .address {
+  width: 100%;
+}
+
+.contacts > p , .address > p {
+  padding: 10px;
+  margin: 20px;
+}
+
+.el-left {
+  width: 100%;
+  float: left;
+  text-align: left;
+}
