@@ -20,8 +20,6 @@ html {
   max-width: 900px;
   min-height: 100%;
   margin: 0 auto;
-  background-color: rgba(221,218,225,0.82);
-  background-size: cover;
 }
 
 .center {
@@ -68,12 +66,11 @@ html {
   background-color: rgba(67,69,59,0.82);
   justify-content: center;
   align-items: center;
-  color: rgba(255,249,255,0.82);
+  color: rgba(229,230,187,0.82);
 }
 
 .header {
   background: transparent;
-  color: rgba(67,69,59,0.82);
 }
 
 .sticky-menu {
