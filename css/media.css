@@ -27,7 +27,7 @@
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 630px) {
   .div-image {
     display: none;
   }

@@ -14,25 +14,25 @@
 </head>
 <body>
 <div class="wrapper">
-  <div class="row header" data-parallax="scroll" data-image-src="images/header.jpg">
+  <div id="main" class="row header center" data-parallax="scroll" data-image-src="images/header.jpg">
     <h1>Приветствуем Вас на сайте клиники по трансформации в киборга.</h1>
   </div>
   <div class="content">
-    <div class="row">
+    <div class="row sticky-menu">
       <div class="nav-menu">
         <nav class="menu">
           <div></div>
           <div class="menu-el">
-            <a href="#">Меню</a>
+            <a href="#main">В начало</a>
           </div>
           <div class="menu-el">
-            <a href="#">О клинике</a>
+            <a href="#reviews">Отзывы</a>
           </div>
           <div class="menu-el">
-            <a href="#">Наши результаты</a>
+            <a href="#about">О клинике</a>
           </div>
           <div class="menu-el">
-            <a href="#">Доп. информация</a>
+            <a href="#call">Заказать звонок</a>
           </div>
           <div></div>
         </nav>
@@ -40,7 +40,7 @@
     </div>
     <div class="row">
       <div class="column-3-4">
-        <div class="reviews" data-parallax="scroll" data-image-src="images/content.jpeg">
+        <div id="reviews" class="reviews" data-parallax="scroll" data-image-src="images/content.jpeg">
           <div class="review">
             <div class="div-image">
               <img class="image" src="images/cyborg.png" alt="Customer">
@@ -86,9 +86,27 @@
             </div>
           </div>
         </div>
+        <div id="about" class="about">
+          <div class="text">
+            <h2>История нашей клиники:</h2>
+            <div class="clinic-story">
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+                vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+                dolorem eum fugiat quo voluptas nulla pariatur.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="column-1-4">
-        <div class="div-order">
+        <div id="call" class="div-order">
           <div class="column center">
             <div>
               <h3>Заказать обратный звонок</h3>
