@@ -28,6 +28,12 @@ html {
   text-align: center;
 }
 
+.center-top {
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
 .column {
   display: flex;
   height: 100%;
@@ -44,21 +50,12 @@ html {
   height: auto;
 }
 
-.column-1-4 {
-  width: 25%;
-  height: auto;
-}
-
-.column-3-4 {
-  width: 75%;
-  height: auto;
-}
-
 .row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   height: auto;
+  width: 100%;
 }
 
 .header, .footer {
@@ -71,6 +68,14 @@ html {
 
 .header {
   background: transparent;
+}
+
+h1 {
+  color: rgba(229,230,187,0.82);
+  font-size: 3em;
+  text-shadow: black 1px 1px 0, #cad5e2 1px 1px 0,
+                #cad5e2 1px 1px 0, #cad5e2 1px 1px 0,
+                #cad5e2 1px 1px 0;
 }
 
 .sticky-menu {
@@ -124,6 +129,7 @@ html {
   flex-direction: column;
   background: transparent;
   height: auto;
+  width: 100%;
 }
 
 .review {
@@ -132,6 +138,7 @@ html {
   margin: 20px;
   padding: 10px;
   background-color: rgba(179,189,186,0.82);
+  opacity: 1;
 }
 
 .image {
@@ -147,14 +154,16 @@ html {
 
 .text {
   margin: 0 20px;
-  text-align: justify;
+  text-align: left;
+  font-weight: bold;
 }
 
-.div-license, .div-order {
-  margin: 20px;
+.div-order {
   height: auto;
+  width: 100%;
   background-color: rgba(113,115,105,0.82);
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .div-order > div > div {
@@ -191,11 +200,16 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.doc-links > h3 {
+  color: rgba(229,230,187,0.82);
 }
 
 .doc-links > ul{
   list-style: none;
-  font-size: larger;
 }
 
 .doc-links > ul > li {
@@ -207,7 +221,7 @@ li {
 }
 
 .link {
-  color: rgba(255,249,255,0.82);
+  color: rgba(229,230,187,0.82);
   text-decoration: none;
   margin: 10px;
 }
@@ -216,11 +230,11 @@ li {
   color: black;
 }
 
-.contacts, .address {
-  width: 100%;
+.contacts, .div-license{
+  flex: 1;
 }
 
-.contacts > p , .address > p {
+.contacts > p {
   padding: 10px;
   margin: 20px;
 }
@@ -237,6 +251,6 @@ li {
 }
 
 .about {
-  margin: 20px;
+  padding: 10px;
   background-color: rgba(179,189,186,0.82);
 }
